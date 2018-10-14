@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Food OOP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+    <div id="sideBar">
+        <span id="createProduct">מוצר חדש</span>
+        <span id="seeStock">צפה במלאי</span>
+        <span id="about">אודות</span>
+    </div>
+    <div id="pageContainer">
+        <div id="cpPage" class="contentPage">
+            <h1>יצירת מוצר חדש</h1>
+            <label for="productNameInput">שם המוצר:</label>
+            <input type="text" name="productNameInput" id="pNameInput" />
+            <label for="priceInput">מחיר בשקלים:</label>
+            <input type="number" name="priceInput" id="priceInput" min="0" step="0.50" value="0" />
+            <label for="weightInput">משקל בק"ג:</label>
+            <input type="number" name="weightInput" id="weightInput" min="0.1" step="0.1" value="0.1" />
+            <label>כשר?
+                <input type="checkbox" name="kosherInput" id="kosherInput" checked="checked"/>
+            </label>
+            <label for="manInput">יצרן:</label>
+            <input type="text" name="manInput" id="manInput"/>
+            <label>תאריך תפוגה:
+                <input type="date" name="dateInput" id="dateInput"/>
+            </label>
+            <button type="button" id="submitBtn">הוסף מוצר</button>
+        </div>
+
+        <div id="stockPage" class="contentPage">
+            <h1>מלאי</h1>
+            
+        </div>
+    </div>
+    <script src="elements.js"></script>
+    <script src="product.js"></script>
+    <script src="stock.js"></script>
+    <script src="functions.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

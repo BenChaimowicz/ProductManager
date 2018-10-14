@@ -1,0 +1,55 @@
+body{
+    display: block;
+    direction: rtl;
+    min-height: 600px;
+    margin: 0;
+}
+#pageContainer{
+    display: block;
+    min-height: 600px;
+    margin-right: 20%;
+}
+#sideBar{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    margin: 0;
+    z-index: 10;
+    position: fixed;
+    padding-bottom: 100px;
+
+    font-size: 26px;
+    color:darkmagenta;
+    background-color:cornflowerblue;
+}
+#sideBar > span{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    cursor: pointer;
+}
+.contentPage{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+}
+#cpPage{
+    z-index: 6;
+    display: flex; 
+    flex-flow: column wrap;
+    background-color: aliceblue;
+}
+.contentPage > * {
+    margin-top: 12px;
+    margin-right: 6px;
+}
+#cpPage > input,button{
+    width: 120px;
+}
+#stockPage{
+    z-index: 5;
+
+    background-color: aliceblue;
+}
